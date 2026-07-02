@@ -43,3 +43,8 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+
+# Claude Code isolated worktrees (parallel sessions live under .claude/worktrees/).
+# Their contents must never surface as untracked files in the main checkout.
+# Only this subfolder is ignored — a committed .claude/settings.json stays tracked.
+.claude/worktrees/
